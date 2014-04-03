@@ -1,0 +1,28 @@
+/* Grid */
+$width: 100%;
+$gutter : $golden * 2 * 1%;
+$wrapper : $width + 2 * $gutter;
+
+
+.col{
+	float: left;
+	position: relative;
+	margin-left: $gutter;
+	margin-right: $gutter;
+	margin-bottom: 0;
+}
+
+@for $i from 1 through $columns {
+	.col-#{$i}{
+	@extend .col;
+		width: ( $i * $wrapper / $columns - 2 * $gutter  ) ;
+	}
+}
+
+.alpha, .first {
+	margin-left: 0!important;
+}
+
+.omega, .last {
+	margin-right: 0!important;
+}

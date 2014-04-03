@@ -1,0 +1,119 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Buttons
+/*-----------------------------------------------------------------------------------*/
+// Main button mixin
+@mixin button($color) {
+	cursor: pointer;
+	outline:none!important;
+	position: relative;
+	opacity: 1!important;
+	line-height: 1!important;
+	font-style:normal!important;
+	vertical-align: middle;
+	text-shadow: none!important;
+	font-family: $sans-serif;
+	text-align: center;
+	font-weight:700!important;
+	text-decoration: none!important;
+	display: inline-block;
+	letter-spacing:0;
+	color:white!important;
+	width: auto;
+	border:none!important;
+	background-image: none;
+	background-color: $color;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	padding: 1.618rem 3.236rem;
+	font-size: 1.618rem;
+	width: 100%;
+	margin-bottom: 1.618rem;
+	
+	&:hover, &:active, &:focus{
+		background-color: $color;
+	}
+}
+
+.button{
+	@include button($accent);
+	box-shadow: 0 4px 0 darken( $accent,15% );
+	top:-2px;
+
+	&:hover{
+		top:0px;
+		box-shadow: 0 2px 0 darken( $accent,15% );
+	}
+
+	&:active, &:focus{
+		top:2px;
+		box-shadow: 0 0 0 darken( $accent,15% );
+	}
+
+}
+
+.button-big{
+	@include button($accent);
+	box-shadow: 0 6px 0 darken( $accent,15% );
+	top:-3px;
+
+	 &:hover{
+	 	top:-1px;
+		box-shadow: 0 4px 0 darken( $accent,15% );
+	 }
+
+ 	&:active, &:focus{
+		top:3px;
+		box-shadow: 0 0 0 darken( $accent,15% );
+	}
+
+}
+
+.button-alt,
+.button-alt-big{
+	-webkit-transition: all .1s;
+	   -moz-transition: all .1s;
+	    -ms-transition: all .1s;
+	     -o-transition: all .1s;
+	        transition: all .1s;
+	@include button($accent);
+	color:$font-color-medium!important;
+	-webkit-border-radius: 0;
+	        border-radius: 0;
+	box-shadow: 0 0 0 transparent;
+	background: none!important;
+	border-color :$font-color-medium!important;
+	border-style: solid!important;
+	border-width:2px!important;
+
+	&:active, &:hover, &:focus{
+		box-shadow:  0 0 transparent;
+		color:white!important;
+		background-color:$accent!important;
+		border-color : $accent!important;
+	}
+}
+
+.button-alt-light-big{
+	border-width:3px!important;
+}
+
+.button-alt-light,
+.button-alt-light-big{
+	@extend .button-alt;
+	color:white!important;
+	border-color :white!important;
+	
+	&:active, &:hover, &:focus{
+		color:white!important;
+	}
+}
+
+.button-big,
+.button-alt-big,
+.button-alt-light-big{
+	padding: 1.618*1.3rem 3.236*1.3rem;
+	font-size: 1.618*1.3rem;
+}
+
+
+

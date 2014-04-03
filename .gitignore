@@ -1,0 +1,17 @@
+# Ignore assets & dist for now
+assets
+dist
+demo
+*.html
+
+# Ignore grunt for now
+grunt
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Mac crap
+.DS_Store

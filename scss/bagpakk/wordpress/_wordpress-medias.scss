@@ -1,0 +1,61 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Wordpress medias
+/*-----------------------------------------------------------------------------------*/
+
+/* Override the Twitter embed fixed width. */
+.entry-content .twitter-tweet-rendered {
+	max-width: 100% !important;
+	width: 100% !important;
+	margin-top: 0!important;
+	margin-bottom: 0!important;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	padding-top: 0!important;
+	padding-bottom: 0!important;
+	padding-left: 0!important;
+	padding-right: 0!important;
+	-webkit-radius: 0!important;
+	border-radius: 0!important;
+	box-shadow:none!important;
+	-webkit-box-shadow:none!important;
+	-moz-box-shadow:none!important;
+	-o-box-shadow:none!important;
+	border:none!important;
+}
+
+
+/* Wordpress mejs player */
+.mejs-container{
+	margin-bottom: 2em;
+
+	.mejs-controls{
+
+		background: #333;
+		
+		.mejs-button button:focus{
+			outline:none;
+		}
+
+		.mejs-time-rail span,
+		.mejs-horizontal-volume-slider div{
+			border-radius:0!important;
+		}
+
+		.mejs-time-rail .mejs-time-total,
+		.mejs-horizontal-volume-slider .mejs-horizontal-volume-total{
+			background-image: none!important;
+			background: #666!important;
+		}
+
+		.mejs-time-rail .mejs-time-loaded{
+			background-image: none!important;
+			background: #666!important;
+		}
+
+		.mejs-time-rail .mejs-time-current,
+		.mejs-horizontal-volume-slider .mejs-horizontal-volume-current{
+			background-image: none!important;
+			background: #FFF!important;
+		}
+	}	
+}

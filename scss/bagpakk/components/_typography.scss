@@ -1,0 +1,221 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Typography
+/*-----------------------------------------------------------------------------------*/
+
+html {
+	font-size: 62.5%;
+}
+
+body{
+	background: $background;
+	color: $font-color-medium;
+	font-size: 1.8rem;
+	line-height: 1.7;
+	font-family: $serif;
+}
+
+/* Link */
+a{
+	color: $accent;
+	
+	&:focus{
+		outline:none;
+	}
+}
+
+h1, h2, h3, h4, h5, h6{
+	a{
+		
+		color: $font-color-hard;
+		&:hover{
+			color: $accent;
+		}
+		
+	}
+}
+
+// for icon font
+i{
+	-webkit-backface-visibility:hidden;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5{
+	font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	text-rendering: optimizeLegibility;
+	line-height: 1.618;
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4 {
+	color: $font-color-hard;
+}
+
+h1, h2 {
+	font-size: 3rem;
+	line-height: 1.1em;
+}
+
+h3 {
+	font-size: 2.8rem;
+}
+
+h4 {
+	font-size: 2.3rem;
+}
+
+h5 {
+	font-size: 2.5rem;
+}
+
+h6 {
+	font-size: 2rem;
+}
+
+/* Paragraph */
+p, ul, ol {
+	margin: 0 0 1.618rem 0;
+}
+
+.dropcap:first-letter{
+	color:$font-color-hard;
+	font-size: 6rem;
+	margin-top: -1.618rem;
+	margin-right: 1.3rem;
+	margin-bottom: 0;
+	float: left;
+}
+
+/* Separator */
+hr{
+	@extend .clearfix;
+	display: block;
+	border: none;
+	height:4px;
+	background: black(0.05);
+	margin: 4rem auto;
+	width: 100%;
+}
+
+/* Quote */
+blockquote{
+	@extend .centered;
+	max-width: $max-small-width;
+	font-family: $serif;
+	font-size: 1.1em;
+	font-style: italic;
+	color:$font-color-hard;
+}
+
+blockquote {
+	@extend .centered;
+	max-width: $max-small-width;
+	color:$font-color-hard;
+	font-family: $serif;
+	margin: 1em 0 1.618em -2.2em;
+	padding: 0 0 0 1em;
+	border-left: black(.05) 0.5em solid;
+}
+
+blockquote p {
+	margin: 0.8em 0;
+	font-style: italic;
+}
+
+blockquote small {
+	display: inline-block;
+	margin: 0.8em 0 0.8em 1.5em;
+	font-size:0.9em;
+	color: #ccc;
+}
+
+/* Cite */
+cite{
+	font-size: 0.8em;
+	font-weight: 400;
+	display: inline-block;
+	width: 100%;
+	font-style: normal;
+	&:before{
+		content: '\2014 \00A0';
+
+	}
+}
+
+small{
+	font-size: 0.9em;
+}
+
+/* List */
+ul, ol{	
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1.5em;
+	margin-left: 1em;
+}
+
+ul li{
+	list-style-type:$list-style-type; 
+}
+
+/* Pre, code */
+code, pre{
+	font: 0.7em "andale mono", "lucida console", monospace;
+	line-height: 1.618;
+	color: $font-color-hard;	
+}
+
+code { 
+	margin: 0 0.5em;
+	background: #FFF;
+	line-height: 1em;
+	display: inline;
+	padding: 0.5em;
+ }
+
+pre {
+	@include word-wrap(normal);
+	background: #FFF;
+	padding:0.5em 1em;
+	overflow-x: auto; 
+	overflow-y: hidden; 
+	margin:1.618em 0 3em;
+	border:1px solid black(0.1);
+	
+	span{
+		color:green;
+	}
+}
+
+/* Others */
+address{
+	 p {
+		margin-bottom: 0;
+	}
+
+	margin-bottom: rem-calc(14);
+}
+
+abbr[title], acronym[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+dt {
+	font-weight: bold;
+	text-decoration: underline;
+}
+dd {
+	margin: 0;
+	padding: 0 0 0.5rem 0;
+}
+
+/* Big */
+.big{
+	font-size: 3em;
+}

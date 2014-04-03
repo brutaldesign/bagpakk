@@ -1,0 +1,20 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Responsive medias
+/*-----------------------------------------------------------------------------------*/
+
+/* Responsive images */
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/* Make sure videos and embeds fit their containers. */
+embed,
+iframe,
+object,
+audio,
+video,
+canvas{
+	border:none!important;
+	max-width: 100%;
+}

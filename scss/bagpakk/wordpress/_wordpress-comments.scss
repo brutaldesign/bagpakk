@@ -1,0 +1,167 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Wordpress comments
+/*-----------------------------------------------------------------------------------*/
+#respond {
+	margin-bottom: 1em;
+	margin-top: 2em;
+}
+
+.comment{
+	@extend .clearfix;
+}
+
+.comment-list,
+.comment-list .children {
+	@extend .clearfix;
+	padding: 0;
+	
+	li{
+		list-style-type: none!important;
+		#reply-title,
+		#respond #commentform,
+		#respond iframe{
+			width: 100%;
+		}
+	}
+	
+	.comment{
+		font-size: 1em;
+	}
+	
+}
+
+.comment-list .children {
+	margin-left: 8%;
+}
+
+.comment-list > li:after,
+.comment-list .children > li:before {
+	height:4px;
+	background: black(.05);
+	content: "";
+	display: block;
+	width: 100%;
+}
+
+.comment-list > li:last-child:after {
+	display: none;
+}
+
+.comment {
+	padding: 1.5em 0;
+}
+
+.comment-author {
+	float: left;
+	max-width: 80px;
+}
+
+.avatar {
+	display: block;
+	margin-bottom: 0.8em;
+}
+
+
+.comment-reply-title, #cancel-comment-reply-link{
+	display: inline;
+}
+
+.comment-reply-link {
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 700;
+}
+
+.comment-meta .fn, .comment-meta .fn a{
+	color:#333;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.comment-reply-link {
+	color: $accent;
+}
+
+cite.fn{
+	display: block;
+}
+
+cite.fn:before{
+	display: none;
+	
+}
+
+.no-avatars .comment-author {
+	float: none;
+	margin: 0 0 0.5em;
+	max-width: 100%;
+}
+
+.no-avatars .comment-meta,
+.no-avatars .comment-content,
+.no-avatars .reply {
+	width: 100%;
+}
+
+.comment-list .edit-link {
+	margin-left: 20px;
+}
+
+.comment-content{
+	font-size: 0.8em;
+}
+
+.comment-content p{
+	margin-top: 0;
+}
+
+.comment-meta,
+.comment-content,
+.reply {
+	float: right;
+	width: 79%;
+	@include calc( width, '100% - 124px');
+}
+
+#cancel-comment-reply-link{
+	
+}
+
+.comment-meta,
+.comment-meta a {
+	font-size: 0.9em;
+	margin-bottom: 10px;
+}
+
+.ping-meta {
+	color: #a2a2a2;
+	font-size: 14px;
+	line-height: 2;
+}
+
+
+.comment-awaiting-moderation {
+	color: #a2a2a2;
+}
+
+.no-comments{
+	text-align: center;
+}
+
+.form-allowed-tags{
+	font-size: 0.8em;
+}
+
+.comments-title{
+	padding-top: 3em;
+	font-size: 1.4em;
+}
+
+
+.trackback, .pingback{
+
+	p{
+		margin-top: 1.618rem;
+	}
+}

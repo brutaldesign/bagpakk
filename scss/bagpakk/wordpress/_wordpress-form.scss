@@ -1,0 +1,59 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Wordpress form
+/*-----------------------------------------------------------------------------------*/
+
+/* Search form */
+#searchform{
+	label,
+	input[type="submit"]{
+		display: none;
+	}
+
+
+}
+
+.searchform{
+	@extend .clearfix;
+}
+
+/* Password form */
+.post-password-form{
+	input[type="submit"]{
+		top: -4px;
+	}
+}
+
+input[name="post_password"]{
+	margin-bottom: 0.5em;
+}
+
+/* Comment Form */
+#commentform {
+	padding-top: 1em;
+	
+	p{
+		margin-bottom: 1em;
+	}
+
+	textarea{
+		margin-top: 1em;
+	}
+  
+   	label{
+   		display: block;
+   		width: 100%;
+   	}
+
+}
+
+/* No result form */
+.nothing-found{
+	
+	.searchform{
+		input{
+			margin-bottom: 1em;
+			width: 640px;
+			max-width: 95%;
+		}
+	}
+}

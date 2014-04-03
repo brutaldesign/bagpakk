@@ -1,0 +1,42 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Main Structure
+/*-----------------------------------------------------------------------------------*/
+html{
+	height: 100%;
+	max-height: 100%;
+	overflow-x: hidden!important;
+}
+
+body{
+	overflow-x: hidden!important;
+	overflow-y: auto;
+}
+
+div,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary{
+	@include word-wrap();
+}
+
+a > img{
+	
+	-webkit-backface-visibility:hidden;
+	-webkit-transition: opacity .2s;
+	-moz-transition: opacity .2s;
+	-ms-transition: opacity .2s;
+	-o-transition: opacity .2s;
+	transition: opacity .2s;
+	&:hover{
+		opacity:0.8
+	}
+}

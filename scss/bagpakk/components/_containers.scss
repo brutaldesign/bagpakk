@@ -1,0 +1,80 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Containers
+/*-----------------------------------------------------------------------------------*/
+
+/* wrapper */
+.wrap{
+	margin: 0 auto;
+	@extend .clearfix;
+	max-width: $max-width;
+	width: 92%;
+}
+
+/* Typically used for a header */
+.hero{
+	font-size: 1.1rem;
+	padding:6rem 0;
+}
+
+/* section container */
+.container{
+	padding: golden-ratio(1rem,  3) 0 golden-ratio(1rem,  3);
+}
+
+/* A centered small width container */
+.small-width{
+	@extend .centered;
+	max-width: $max-small-width;
+}
+
+
+/* A container that uses the alternative font color */
+
+// For example, use it to create a dark box in a light layout 
+.font-color-alt{
+	color: darken($font-color-alt, 5%);
+
+	h1, h2, h3, h4, h5, h6, a{
+		color: $font-color-alt;
+	}
+}
+
+/* Container with a transparent background */
+.box-emboss{
+	background: black(0.05);
+	@include box-emboss();
+}
+
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+/* Footer */
+.site-footer{
+	padding: 5rem 0;
+	background: $footer-bg;
+	color: $footer-color;
+
+	h1, h2, h3, h4, h5, h6{
+		color: $footer-color;
+	}
+
+	a{
+		color: lighten($footer-color, 25%);
+		text-decoration: none;
+
+		&:hover{
+			color:$accent;
+		}
+	}
+}
+
+.gist{
+	margin: 1.618em 0;
+	
+	a{
+		border:none!important;
+	}
+}

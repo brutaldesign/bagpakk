@@ -1,0 +1,66 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Wordpress widgets
+/*-----------------------------------------------------------------------------------*/
+
+.widget-title{
+	@extend h5;
+}
+
+/* Lists */
+.widget_text, 
+.widget_recent_entries, 
+.widget_recent_comments,
+.widget_meta, 
+.widget_categories,
+.widget_archive,
+.widget_rss,
+.widget_pages,
+.widget_nav_menu{
+	ul{
+		margin-left: 1.2em;
+		margin-bottom: 1em;
+	}
+}
+
+/* Pages widget */
+.widget_pages ul ul{
+	margin-bottom: 0;
+
+}
+
+/* Search widget */
+.widget .searchform .field {
+	@include calc(width, '99% - 2rem');
+	max-width: 365px;
+}
+
+  /* Tags */
+ .widget_tag_cloud{
+ 	.widget-content{
+ 		font-weight: 700;
+ 	}
+ }
+
+/* Text widget */
+ .widget_text{
+ 	p{
+ 		margin-bottom: 1em;
+ 	}	
+ }
+
+/* RSS widget */
+.widget_rss {
+	.rss-date {
+		display: block;
+		color: #a2a2a2; 
+	}
+	li > cite {
+		color: #a2a2a2; 
+	} 
+}
+
+/* Calendar widget */
+.widget_calendar {
+	
+}
+	

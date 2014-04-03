@@ -1,0 +1,50 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Wordpress generated classes
+/*-----------------------------------------------------------------------------------*/
+
+/* Images alignment */
+.alignleft, .alignright, .aligncenter, .alignnone{
+	a{
+		border-bottom: none!important;
+	}
+}
+
+.alignleft, .wp-caption.alignleft {float: left; }
+
+.alignright, .wp-caption.alignright {float: right; }
+
+.alignleft, .wp-caption.alignleft {margin:0.8em 1em 0.5em 0; }
+
+.alignright, .wp-caption.alignright {margin:0.8em 0 0.5em 1em; }
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.aligncenter {
+	margin: 1em auto;
+}
+
+/* Image Caption */
+.wp-caption .wp-caption-text,
+.entry-caption {
+	font-size: 0.9em;
+	font-style: italic;
+	font-weight: 400;
+	font-family: $serif;
+	text-align: center;
+
+}
+
+/* Smileys */
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}

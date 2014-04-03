@@ -1,0 +1,82 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Helper classes
+/*-----------------------------------------------------------------------------------*/
+
+/* Text alignment */
+.text-center {
+	text-align:center;
+}
+
+.text-left {
+	text-align:left;
+}
+
+.text-right {
+	text-align:right;
+}
+
+.text-justify {
+	text-align:justify;
+}
+
+/* Floats */
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+/* Text style */
+.caption{
+	opacity:0.8;
+}
+
+.small{
+	@extend small;
+}
+
+
+/* Centered container */
+.centered{
+	@extend .clearfix;
+	margin-left: auto!important;
+	margin-right: auto!important;
+	display: block;
+	float: none!important;
+}
+
+/* Canceller */
+.no-margin{
+	margin:0!important;
+}
+
+.no-padding{
+	padding:0!important;
+}
+
+.no-border,
+.no-border img{
+	border:none!important;
+}
+
+/* Table */
+.table{
+	display:table;
+	
+	.table-cell{
+		display:table-cell;
+		vertical-align: middle;
+	}
+}
+
+/* List */
+ul.inline-list{
+	
+	li{
+		display: inline;
+		margin: 0 1rem;
+		list-style-type: none!important;
+	}
+}

@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Fluid video
+/*-----------------------------------------------------------------------------------*/
+/* Fluid video wrapper */
+.fluid-video{
+	display: block;
+	width: 100%;
+	margin-bottom: 2rem;
+	height: 0;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+	position: relative;
+}
+
+.fluid-video iframe, 
+.fluid-video embed, 
+.fluid-video object, 
+.fluid-video video{
+	width: 100%!important; height: 100%!important;
+	position: absolute;
+	top: 0; left: 0;
+}

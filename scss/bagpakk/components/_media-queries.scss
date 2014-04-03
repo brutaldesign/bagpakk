@@ -1,0 +1,106 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Media queries
+/*-----------------------------------------------------------------------------------*/
+@media screen and (min-width: $break-phone) {
+
+	h1 {
+		font-size: 4.8rem;
+		line-height: 1.2em;
+	}
+
+	h2 {
+		font-size: 3.8rem;
+		line-height: 1.2em;
+	}
+
+	h3 {
+		font-size: 3.3rem;
+	}
+
+	h4 {
+		font-size: 2.8rem;
+	}
+
+	blockquote{
+		margin-left: 1.6em;
+	}
+
+	.button,
+	.button-alt,
+	.button-alt-light,
+	.button-big,
+	.button-alt-big,
+	.button-alt-light-big{
+		width: auto;
+	}
+
+	.button,
+	.button-alt,
+	.button-alt-light{
+		margin: 0.3rem;
+	}
+
+	.button-big,
+	.button-alt-big,
+	.button-alt-light-big{
+		margin:0.4rem;
+	}
+
+	input[type="text"], 
+	input[type="email"],
+	input[type="tel"],
+	input[type="search"],
+	select{
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: $break-tablet) {
+
+	h1 {
+		font-size: 5rem;
+		line-height: 1.2em;
+	}
+
+	h2 {
+		font-size: 4rem;
+		line-height: 1.2em;
+	}
+
+	h3 {
+		font-size: 3.5rem;
+	}
+
+	h4 {
+		font-size: 3rem;
+	}
+
+	.container{
+		padding: golden-ratio(1rem,  4) 0 golden-ratio(1rem,  4);
+	}
+	
+	hr{
+		margin: 4rem 0;
+	}
+
+	ul, ol{	
+		margin-left: 0;
+	}
+
+	@import "grid";
+ 	
+}
+
+@media screen and (min-width: $break-desktop) {
+
+	.container{
+		padding: golden-ratio(1rem,  5) 0 golden-ratio(1rem,  5);
+	}
+
+	hr{
+		margin: 5rem 0;
+	}
+}
+
+
+

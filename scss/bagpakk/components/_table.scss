@@ -1,0 +1,40 @@
+/*-----------------------------------------------------------------------------------*/
+/*  Table
+/*-----------------------------------------------------------------------------------*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	font-size: 1.618rem;
+	line-height: 2;
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+caption,
+th,
+td {
+	font-weight: normal;
+	text-align: left;
+}
+
+caption {
+	font-size: 1em;
+	margin:0.5em 0;
+}
+
+th {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+td {
+	border-bottom: 2px solid black(.05);
+	padding: .5rem .5rem .5rem 0;
+}
+
+.gist table{
+	margin-bottom: 0;
+	
+	td{
+		border-bottom: none;
+	}
+}
