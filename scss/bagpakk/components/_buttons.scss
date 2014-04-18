@@ -22,12 +22,12 @@
 	border:none!important;
 	background-image: none;
 	background-color: $color;
-	-webkit-border-radius: 4px;
-	        border-radius: 4px;
+	border-radius: 4px;
 	padding: 1.618rem 3.236rem;
 	font-size: 1.618rem;
 	width: 100%;
 	margin-bottom: 1.618rem;
+	margin-top: 1em;
 	
 	&:hover, &:active, &:focus{
 		background-color: $color;
@@ -69,16 +69,15 @@
 }
 
 .button-alt,
-.button-alt-big{
-	-webkit-transition: all .1s;
-	   -moz-transition: all .1s;
-	    -ms-transition: all .1s;
-	     -o-transition: all .1s;
-	        transition: all .1s;
+.button-alt-big,
+.button-alt-light,
+.button-alt-light-big{
+	transition-property:  background-color!important;
+	transition-duration: .2s;
+	transition-timing-function: ease;
 	@include button($accent);
 	color:$font-color-medium!important;
-	-webkit-border-radius: 0;
-	        border-radius: 0;
+	border-radius: 0;
 	box-shadow: 0 0 0 transparent;
 	background: none!important;
 	border-color :$font-color-medium!important;
@@ -114,6 +113,5 @@
 	padding: 1.618*1.3rem 3.236*1.3rem;
 	font-size: 1.618*1.3rem;
 }
-
 
 

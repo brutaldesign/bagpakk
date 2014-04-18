@@ -1,8 +1,7 @@
 /* Grid */
 $width: 100%;
-$gutter : $golden * 2 * 1%;
+$gutter : $golden * 1%;
 $wrapper : $width + 2 * $gutter;
-
 
 .col{
 	float: left;

@@ -34,9 +34,12 @@
 }
 
 .small{
-	@extend small;
+	font-size: 0.9em;
 }
 
+.big{
+	font-size: 1.2em;
+}
 
 /* Centered container */
 .centered{
@@ -47,7 +50,7 @@
 	float: none!important;
 }
 
-/* Canceller */
+/* Cancellers */
 .no-margin{
 	margin:0!important;
 }
@@ -61,7 +64,7 @@
 	border:none!important;
 }
 
-/* Table */
+/* Table like */
 .table{
 	display:table;
 	

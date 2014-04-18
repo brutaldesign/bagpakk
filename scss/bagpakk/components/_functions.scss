@@ -10,20 +10,3 @@ $golden : 1.618;
 @function white($opacity){
 	@return rgba(255,255,255,$opacity)
 }
-
-// trim unit value
-@function trim-unit( $value ) {
-	@return $value / ( $value * 0 + 1 );
-}
-
-// calculate rem from px value
-@function rem-calc( $value, $base-value : $base-font-size ) {
-	$value: trim-unit($value) / trim-unit($base-value) * 1rem;
-	@return $value;
-}
-
-// calculate em from px value
-@function em-calc( $value ) {
-	$value: trim-unit($value) / 10 * 1em;
-	@return $value;
-}

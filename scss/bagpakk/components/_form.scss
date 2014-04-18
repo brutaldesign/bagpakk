@@ -60,10 +60,6 @@ textarea {
 	width: 100%;	
 }
 
-textarea{
-	width: 100%;
-}
-
 input[type="text"], 
 input[type="email"],
 input[type="tel"],
@@ -76,10 +72,10 @@ textarea{
 input[type="checkbox"],
 input[type="radio"]{
 	margin-left: 0.1rem;
-	margin-right: rem-calc(10);
+	margin-right: 1rem;
 }
 
-p {
+form p {
 	label{
    		display: block;
    		margin-bottom: 0.5rem;

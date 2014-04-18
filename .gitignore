@@ -1,8 +1,8 @@
-# Ignore assets & dist for now
+# Ignore assets & dist
 assets
 dist
-demo
-*.html
+demo/images
+demo/scss
 
 # Ignore grunt for now
 grunt

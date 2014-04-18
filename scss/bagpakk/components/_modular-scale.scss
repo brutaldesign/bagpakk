@@ -1,18 +1,18 @@
 @function modular-scale($value, $increment, $ratio) {
-  @if $increment > 0 {
-    @for $i from 1 through $increment {
-      $value: ($value * $ratio);
-    }
-  }
+	@if $increment > 0 {
+		@for $i from 1 through $increment {
+			$value: ($value * $ratio);
+		}
+	}
 
-  @if $increment < 0 {
-    $increment: abs($increment);
-    @for $i from 1 through $increment {
-      $value: ($value / $ratio);
-    }
-  }
+	@if $increment < 0 {
+	$increment: abs($increment);
+		@for $i from 1 through $increment {
+			$value: ($value / $ratio);
+		}
+	}
 
-  @return $value;
+	@return $value;
 }
 
 //  div {
@@ -30,11 +30,11 @@
 // modularscale.com
 
 @function golden-ratio($value, $increment) {
-  @return modular-scale($value, $increment, 1.618)
+	@return modular-scale($value, $increment, 1.618)
 }
 
 //  div {
-//    font-size: golden-ratio(14px, 1); // returns: 22.652px
+//   	 font-size: golden-ratio(14px, 1); // returns: 22.652px
 //  }
 //
 // goldenratiocalculator.com

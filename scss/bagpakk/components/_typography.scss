@@ -9,7 +9,7 @@ html {
 body{
 	background: $background;
 	color: $font-color-medium;
-	font-size: 1.8rem;
+	font-size:1.6rem;
 	line-height: 1.7;
 	font-family: $serif;
 }
@@ -23,17 +23,6 @@ a{
 	}
 }
 
-h1, h2, h3, h4, h5, h6{
-	a{
-		
-		color: $font-color-hard;
-		&:hover{
-			color: $accent;
-		}
-		
-	}
-}
-
 // for icon font
 i{
 	-webkit-backface-visibility:hidden;
@@ -42,6 +31,16 @@ i{
 /* Headings */
 h1, h2, h3, h4, h5{
 	font-family: $sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	a{
+		color: $font-color-hard;
+		&:hover{
+			color: $accent;
+		}
+		
+	}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -77,11 +76,12 @@ h6 {
 	font-size: 2rem;
 }
 
-/* Paragraph */
-p, ul, ol {
-	margin: 0 0 1.618rem 0;
+/* Paragraph and lists */
+p, ul, ol, dl {
+	margin: 1.6em 0;
 }
 
+/* Dropcap */
 .dropcap:first-letter{
 	color:$font-color-hard;
 	font-size: 6rem;
@@ -147,15 +147,9 @@ cite{
 	}
 }
 
-small{
-	font-size: 0.9em;
-}
-
-/* List */
+/* Lists */
 ul, ol{	
-	margin: 0;
 	padding: 0;
-	margin-bottom: 1.5em;
 	margin-left: 1em;
 }
 
@@ -194,11 +188,11 @@ pre {
 
 /* Others */
 address{
-	 p {
+	p {
 		margin-bottom: 0;
 	}
 
-	margin-bottom: rem-calc(14);
+	margin-bottom: 1.618rem;
 }
 
 abbr[title], acronym[title] {
@@ -213,9 +207,4 @@ dt {
 dd {
 	margin: 0;
 	padding: 0 0 0.5rem 0;
-}
-
-/* Big */
-.big{
-	font-size: 3em;
 }

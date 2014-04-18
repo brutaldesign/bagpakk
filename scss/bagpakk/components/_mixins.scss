@@ -7,7 +7,7 @@
 }
 
 // Box emboss
-@mixin box-emboss($opacity : 0.5, $opacity2 : 0.05) {
+@mixin box-emboss($opacity : 0.4, $opacity2 : 0.05) {
 	-webkit-box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
 	-moz-box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
 	box-shadow: white($opacity) 0 1px 0, inset black($opacity2) 0 1px 0;
@@ -30,6 +30,13 @@
 @mixin word-wrap( $val : break-word ) {
 	-ms-word-wrap: $val;
 	word-wrap: $val;
+}
+
+// Hide text
+@mixin hide-text() {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 // Web calc

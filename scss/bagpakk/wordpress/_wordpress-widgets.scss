@@ -30,8 +30,9 @@
 
 /* Search widget */
 .widget .searchform .field {
-	@include calc(width, '99% - 2rem');
-	max-width: 365px;
+	padding-left:1%;
+	padding-right:1%;
+	width:98%;
 }
 
   /* Tags */

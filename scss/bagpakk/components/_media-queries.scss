@@ -53,9 +53,25 @@
 	select{
 		width: 60%;
 	}
+
+	// Wordpress Comments
+	.comment-author {
+		float: left;
+	}
+	.comment-meta,
+	.comment-content,
+	.reply {
+		float: right;
+		width: 79%;
+		@include calc( width, '100% - 124px');
+	}
 }
 
 @media screen and (min-width: $break-tablet) {
+
+	body{
+		font-size:1.8rem;
+	}
 
 	h1 {
 		font-size: 5rem;
@@ -83,12 +99,8 @@
 		margin: 4rem 0;
 	}
 
-	ul, ol{	
-		margin-left: 0;
-	}
-
 	@import "grid";
- 	
+
 }
 
 @media screen and (min-width: $break-desktop) {

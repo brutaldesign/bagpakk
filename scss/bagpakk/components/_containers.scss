@@ -10,12 +10,6 @@
 	width: 92%;
 }
 
-/* Typically used for a header */
-.hero{
-	font-size: 1.1rem;
-	padding:6rem 0;
-}
-
 /* section container */
 .container{
 	padding: golden-ratio(1rem,  3) 0 golden-ratio(1rem,  3);
@@ -26,7 +20,6 @@
 	@extend .centered;
 	max-width: $max-small-width;
 }
-
 
 /* A container that uses the alternative font color */
 
@@ -44,7 +37,6 @@
 	background: black(0.05);
 	@include box-emboss();
 }
-
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11 {
 	width: 100%;
@@ -72,7 +64,7 @@
 }
 
 .gist{
-	margin: 1.618em 0;
+	margin: 2em auto;
 	
 	a{
 		border:none!important;
