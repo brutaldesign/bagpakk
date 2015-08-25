@@ -159,7 +159,7 @@ ul li{
 
 /* Pre, code */
 code, pre{
-	font: 0.7em "andale mono", "lucida console", monospace;
+	font: $code-len $code-font;
 	line-height: 1.618;
 	color: $font-color-hard;	
 }
